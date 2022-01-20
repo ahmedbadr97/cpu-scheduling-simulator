@@ -19,7 +19,7 @@ public class Home {
         try {
             homeLoader = new FXMLLoader(getClass().getResource("/main/resources/fxml/Home.fxml"));
 
-            String algorithms[] = {"First Come First Serve", "Shortest Job First", "Shortest Remaining Job First", "Round Robin", "Comparison Chart"};
+            String[] algorithms = {"First Come First Serve", "Shortest Job First", "Shortest Remaining Job First", "Round Robin", "Comparison Chart"};
             homeparent = homeLoader.load();
             homeController = homeLoader.getController();
             homeController.Ini(algorithms);
